@@ -17,8 +17,6 @@ const features = [
   },
 ];
 
-const chartBars = [38, 58, 46, 82, 70];
-
 function App() {
   return (
     <>
@@ -50,38 +48,6 @@ function App() {
               <a className="button secondary" href="#work">
                 Se eksempel
               </a>
-            </div>
-          </div>
-
-          <div className="hero-visual" aria-label="Forhåndsvisning av landingsside">
-            <div className="preview-window">
-              <div className="window-bar" aria-hidden="true">
-                <span />
-                <span />
-                <span />
-              </div>
-              <div className="preview-content">
-                <div className="metric">
-                  <strong>42%</strong>
-                  <span>raskere lansering</span>
-                </div>
-                <div className="chart" aria-hidden="true">
-                  {chartBars.map((height, index) => (
-                    <span
-                      key={height}
-                      style={{
-                        height: `${height}%`,
-                        animationDelay: `${index * 120}ms`,
-                      }}
-                    />
-                  ))}
-                </div>
-                <div className="preview-lines" aria-hidden="true">
-                  <span />
-                  <span />
-                  <span />
-                </div>
-              </div>
             </div>
           </div>
         </section>
